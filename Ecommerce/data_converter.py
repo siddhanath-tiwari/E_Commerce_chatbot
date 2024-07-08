@@ -4,7 +4,7 @@ from langchain_core.documents import Document
 
 
 def dataconveter():
-    product_data=pd.read_csv("../data/flipkart_product_review.csv")
+    product_data=pd.read_csv(r"C:\\Users\\HP\\Desktop\\Internship file\\E-commerce_Bot\\E_Commerce_chatbot\\data\\flipkart_product_review.csv")
 
     data=product_data[["product_title","review"]]
 

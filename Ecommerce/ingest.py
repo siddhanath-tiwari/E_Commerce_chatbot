@@ -25,12 +25,14 @@ def ingestdata(status):
     
     storage=status
     
+    
     if storage==None:
         docs=dataconveter()
         inserted_ids = vstore.add_documents(docs)
+        
     else:
         return vstore
-    return vstore, inserted_ids
+        return vstore, inserted_ids
 
 if __name__=='__main__':
     vstore,inserted_ids=ingestdata(None)
